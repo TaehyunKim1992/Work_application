@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:background="#fcffffff"
+    android:id="@+id/joinMainLayout">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:weightSum="1"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:text="가입하기"
+            android:id="@+id/textView4"
+            android:layout_weight="0.89"
+            android:textColor="#448aff"
+            android:textSize="40dp"
+            android:singleLine="true"
+            android:textColorLink="#090707"
+            android:textIsSelectable="false"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center" />
+
+        <ImageView
+            android:layout_width="349dp"
+            android:layout_height="181dp"
+            android:id="@+id/imageView"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/man"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="38dp"
+            android:id="@+id/name"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/round"
+            android:layout_margin="10dp"
+            android:hint="Name"
+            android:textColorHint="#898989"
+            android:textColor="#373737" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="38dp"
+            android:id="@+id/email"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/round"
+            android:layout_margin="10dp"
+            android:hint="Email"
+            android:inputType="textVisiblePassword"
+            android:textColorHint="#898989"
+            android:textColor="#373737" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="38dp"
+            android:id="@+id/pwd"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/round"
+            android:layout_margin="10dp"
+            android:hint="Password"
+            android:maxLength="12"
+            android:inputType="textPassword"
+            android:textColorHint="#898989"
+            android:textColor="#373737" />
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:text="Join"
+            android:id="@+id/join"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/buttonshape"
+            android:clickable="true"
+            android:layout_margin="5dp"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:text="Back"
+            android:id="@+id/back"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/buttonshape_2"
+            android:clickable="true"
+            android:layout_margin="5dp"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

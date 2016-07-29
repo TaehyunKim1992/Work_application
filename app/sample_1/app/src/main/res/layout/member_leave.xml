@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="진짜 탈퇴할거에요?"
+        android:textSize="30dp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/eText"
+        android:background="@drawable/round"
+        android:layout_margin="10dp"
+        android:hint="Password"
+        android:maxLength="8"
+        android:inputType="textPassword"
+        android:textColorHint="#898989"
+        android:textColor="#373737"
+        android:textIsSelectable="false"
+        android:singleLine="false" />
+    <TextView
+        android:layout_width="330dp"
+        android:layout_height="400dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="자신의 비밀번호를 입력하고 확인버튼을 누르면 탙퇴가 완료됩니다."
+        android:textSize="30dp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="탈퇴하기"
+        android:id="@+id/goLeave"
+        android:layout_gravity="center_horizontal"
+        android:background="#c82f2f" />
+
+
+</LinearLayout>

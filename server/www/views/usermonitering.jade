@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  br
+  h1.text 모니터링 페이지
+  hr
+  ul
+    table
+      tr.text2
+        th <b>이름
+        th <b>현재위치
+        th <b>마지막 업데이트 시간
+      each lists in list
+        tr.text
+          th=lists.name
+          th=lists.loc
+          th=lists.time
+  hr
+  p.text 30초 마다 자동 업데이트 됩니다.
+  p.text 해당 페이지는 테스트용입니다.
+    
+
+        

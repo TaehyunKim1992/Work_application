@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.razer.sample_1.MainActivity">
+    <item
+        android:id="@+id/action_notice"
+        android:orderInCategory="100"
+        android:title="공지사항"
+        app:showAsAction="always|withText" />
+
+<!--    <item
+        android:id="@+id/member_leave"
+        android:orderInCategory="100"
+        android:title="탈퇴"
+        app:showAsAction="always|withText" />-->
+
+    <!--<item-->
+        <!--android:id="@+id/view_map"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title="맵뷰"-->
+        <!--app:showAsAction="always|withText" />-->
+
+    <item
+        android:id="@+id/user_option"
+        android:orderInCategory="100"
+        android:title="옵션"
+        app:showAsAction="always|withText" />
+</menu>

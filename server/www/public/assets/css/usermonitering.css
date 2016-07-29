@@ -1,0 +1,44 @@
+/*table{
+  font-size: 3em;
+  background-color: red;
+}*/
+
+
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table {
+  height: auto;
+  background-color: inherit;
+  background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+
+  text-align:center;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+tr:hover{background-color:#A6A6A6}
+
+.text{
+  color: white;
+}
+
+.text2{
+  color: #FFA7A7;
+}
+
+body{
+  text-align:center;
+  background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+}

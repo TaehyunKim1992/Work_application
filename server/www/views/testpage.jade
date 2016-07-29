@@ -1,0 +1,68 @@
+doctype html
+html
+  
+  head
+    title ICCT
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='assets/css/main.css')
+
+  body
+    style.
+      table, th, td, tr {
+      border: 1px solid black;
+      display: table-col;
+      vertical-align: inherit;
+      border-color: inherit;
+      width: 800px;
+      height: 50px;
+      }
+
+    // Header
+    section#header
+      header
+        h1 ICCT 테스트 페이지!
+        p By IoT연구소
+      footer
+        a.button.style2.scrolly-middle(href='#first') Worker list
+    // Banner
+    section#banner
+      header
+        h2 [사무실 내의 사원들]
+      p
+        | 현재 보여지는 페이지는
+        | 테스트 페이지입니다.
+        br
+        |  
+        strong ICCT 테스트 앱
+        | 을 실행중인 사원들의 목록을 나타냅니다.
+        br
+      footer
+        a.button.style2.scrolly(href='#first') Act on this message
+    // Feature 1
+    article#first.container.box.style1.right
+      ul
+        table
+          tr
+            th <b>이름
+            th <b>현재위치
+            th <b>마지막 업데이트 시간
+          each lists in list
+            li
+              tr
+                th=lists.name
+                th=lists.loc
+                th=lists.time
+      artcle
+        if lists
+          h2= lists.name
+          = description
+          div= 'by '+lists.author
+  
+    // Scripts
+    script(src='assets/js/jquery.min.js')
+    script(src='assets/js/jquery.scrolly.min.js')
+    script(src='assets/js/jquery.poptrox.min.js')
+    script(src='assets/js/skel.min.js')
+    script(src='assets/js/util.js')
+    script(src='assets/js/main.js')
